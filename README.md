@@ -5,41 +5,9 @@ Code challenge submission for the Insight NASA fansite analytics project.
 To execute the project, run the shell script `run.sh` in the root folder. 
 To execute the unit tests, run the shell script `run_tests.sh` in the insight_testsuite folder.
 
-File directory should look like:
-
-├── README.md 
-├── run.sh
-├── src
-│   └── process_log.py
-|   └── helper_functions.py
-├── log_input
-│   └── log.txt
-├── log_output
-|   └── hosts.txt
-|   └── hours.txt
-|   └── resources.txt
-|   └── blocked.txt
-├── insight_testsuite
-    └── run_tests.sh
-    └── tests
-        └── test1
-        |   ├── log_input
-        |   │   └── log.txt
-        |   |__ log_output
-        |   │   └── hosts.txt
-        |   │   └── hours.txt
-        |   │   └── resources.txt
-        |   │   └── blocked.txt
-        ├── test2
-            ├── log_input
-            │   └── log.txt
-            |__ log_output
-                └── hosts.txt
-                └── hours.txt
-                └── resources.txt
-                └── blocked.txt
-
-Four features calculating top 10 most frequent IP addresses, top 10 resources with the largest bandwith, top 10 busiest 60-minute time periods, and a log of blocked logins applying the stated blocking policy from the Insight challenge. 
+File directory should include a log.txt file in a log_input folder and a src folder to hold the python files. 
+******************************************************************************************************************************************
+This script generates four features calculating top 10 most frequent IP addresses, top 10 resources with the largest bandwith, top 10 busiest 60-minute time periods, and a log of blocked logins applying the stated blocking policy from the Insight challenge. The outputs are generated as txt files in the log_output folder. 
 
 Additional features include:
 * Error logging for Unicode Decode Errors and invalid filepaths. (Uncomment relevant section in process_log.py to    generate error log txt file)
