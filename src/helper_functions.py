@@ -152,7 +152,7 @@ def check_error(code):
     Check for HTTP error codes
     """
     
-    if code in ['400', '401', '403', '404', '500', '501']:
+    if code in ['302', '304', '400', '401', '403', '404', '500', '501']:
         return True
     else:
         return False
