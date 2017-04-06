@@ -20,3 +20,5 @@ Additional features include:
 After performing 70 tests with varying subset sizes of the data, the solution processed the data and generated the features with an average speed of 28,363.37 lines/sec. Across the trials, the solution ran in O(N) time. This indicates that the marginal cost borne by each extra minute of processing supports an extra 1,701,802 lines of data. Given that the highest minute of activity within the log.txt file was 974 logins/minute, this represents a comfortable margin to handle the current level of streaming traffic and consider scaling up operations.
 
 * ![Scalability Analysis](./scale_analysis.png)
+
+For more details, see the Insight Code Challenge Github repo: https://github.com/InsightDataScience/fansite-analytics-challenge
